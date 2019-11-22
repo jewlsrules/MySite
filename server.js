@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const routesController = require('./controllers/pages.js');
 require('dotenv').config()
 
 // Port ===============
@@ -11,3 +12,4 @@ app.listen(PORT, () => {
 // Middleware =========
 app.use(express.json());
 app.use(express.static('public'));
+app.use('/route', routesController);
