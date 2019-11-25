@@ -1,6 +1,6 @@
+console.log('connected');
 const app = angular.module('MyApp', []);
 
-app.controller('MyController', ['$http', function($http){
-
-
-}]);
+app.controller('MyController', function(){
+    this.foo = 'bar';
+});
