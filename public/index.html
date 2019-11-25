@@ -12,17 +12,16 @@
     <body ng-controller="MyController as ctrl">
       <div class="container">
         <div class="header">
-          {{2+2}}
           <h1>Jewls Krueger</h1>
           <h3>- Web Developer -</h3>
         </div>
         <div class="nav">
-          <h3 ng-click='ctrl.changeInclude(projects)'>Projects</h3>
-          <h3>About</h3>
+          <h3 ng-click="ctrl.changeInclude('projects')">Projects</h3>
+          <h3 ng-click="ctrl.changeInclude('about')">About</h3>
           <h3>Contact</h3>
         </div>
         <hr>
-        <div ng-include="'partials/projects.html'"></div>
+        <div ng-include="ctrl.includePath">
       </div>
     </body>
 </html>
