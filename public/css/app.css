@@ -37,8 +37,13 @@ body {
   font-family: 'Heebo', sans-serif;
 }
 
+.nav *:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 hr {
-  width: 88%;
+  width: 90%;
   border-top: 1px solid black;
 }
 
@@ -91,4 +96,11 @@ hr {
 .project-desc {
   width: 88%;
   font-size: 1.1em;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  width: 88%;
+  justify-content: center;
 }
