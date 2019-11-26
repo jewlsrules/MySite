@@ -18,10 +18,12 @@
         <div class="nav">
           <h3 ng-click="ctrl.changeInclude('projects')">Projects</h3>
           <h3 ng-click="ctrl.changeInclude('about')">About</h3>
-          <h3>Contact</h3>
+          <h3 ng-click="ctrl.changeInclude('contact')">Contact</h3>
         </div>
         <hr>
         <div class='about-me' ng-include="ctrl.includePath">
       </div>
+      <footer>
+      Site created by <a href="http://www.github.com/jewlsrules">Jewls Krueger</a></footer>
     </body>
 </html>
