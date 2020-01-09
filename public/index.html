@@ -20,10 +20,37 @@
           <h3 ng-click="ctrl.changeInclude('about')">About</h3>
           <h3 ng-click="ctrl.changeInclude('contact')">Contact</h3>
         </div>
+        <div class="about-me-div">
+          <h1 class='page-header'>About Jewls</h1>
+          <div class="two-columns">
+            <p class='about-p'>I am a web developer located in Long Beach, CA. I previously worked at Lyft as an operations manager and watched the company scale from 7 cities to international operation. In 2019 I began the Software Engineering Immersive Bootcamp from General Assembly and I'm set to complete the program in January 2020.</p><br>
+            <div class="skills">
+              <h2>Skills</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>MongoDB</li>
+                <li>React</li>
+                <li>PostgreSQL</li>
+                <li>GitHub</li>
+                <li>Agile Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <hr>
         <div class='about-me' ng-include="ctrl.includePath">
-      </div>
+        </div>
       <footer>
-      Site created by <a href="http://www.github.com/jewlsrules">Jewls Krueger</a></footer>
+      Site created by <a href="http://www.github.com/jewlsrules">Jewls Krueger</a><br>
+    <a href='https://github.com/jewlsrules'>
+      <img class='footer-link' src='https://avatars0.githubusercontent.com/u/9919?s=280&v=4'>
+    </a>
+    <a href="https://www.linkedin.com/in/jewls-krueger/"><img src='https://image.flaticon.com/icons/png/512/38/38669.png'></a>
+  </footer>
     </body>
 </html>
