@@ -10,18 +10,20 @@
         <script src="/js/app.js" charset="utf-8"></script>
     </head>
     <body>
+      <div class="nav-container">
+        <div class="nav">
+          <a href='#about-me'><h3>About</h3></a>
+          <a href='#projects'><h3>Projects</h3></a>
+          <a href='#contact'><h3>Contact</h3></a>
+        </div>
+      </div>
       <div class="container">
         <div class="header">
           <h1>Julia "Jewls" Krueger</h1>
           <h3>- Web Developer & Software Engineer -</h3>
         </div>
-        <div class="nav">
-          <h3>About</h3>
-          <h3>Projects</h3>
-          <h3>Contact</h3>
-        </div>
         <div class="about-me-div">
-          <h1 class='page-header'> About Me </h1>
+          <h1 class='page-header' id='about-me'> About Me </h1>
           <p class='about-p'>I am a web developer and software engineer located in Long Beach, CA. I attended General Assembly's Software Engineering Immersive bootcamp from October 2019 - January 2020 and am currently looking for work as a software engineer or web developer in the greater Los Angeles/Orange County area.</p>
           <p class='about-p'>I previously worked at Lyft as an operations manager and watched the company scale from 7 cities to international operation. In 2019 I began the Software Engineering Immersive Bootcamp from General Assembly and I'm set to complete the program in January 2020.</p><br>
           <div class="skills">
@@ -48,7 +50,7 @@
             </div>
           </div>
         </div>
-        <div class="projects">
+        <div class="projects" id='projects'>
           <h1 class='page-header'>Projects</h1>
           <div class="project-card">
             <a href="https://crowdsomm.herokuapp.com/"><img src="https://imgur.com/ld2hVfY.png" alt="CrowdSomm"></a>
@@ -98,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="contact">
+        <div class="contact" id='contact'>
           <h1 class='page-header'>Contact Jewls</h1>
           <p>Are you interested in working together?</p>
           <p>Shoot me an email and let's chat:</p>

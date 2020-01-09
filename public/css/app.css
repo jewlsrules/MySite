@@ -13,12 +13,26 @@ body {
   font-family: 'Heebo', sans-serif;
 }
 
+.nav-container {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background: white; */
+}
+
+.nav {
+  background: white;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   /* This is to keep the footer out of the content area */
   padding-bottom: 4rem;
+  padding-top: 2rem;
 }
 
 .header {
@@ -45,11 +59,17 @@ body {
 }
 
 .nav {
-  width: 80%;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   font-family: 'Heebo', sans-serif;
   border-bottom: 1px solid var(--yellow);
+}
+
+.nav a {
+  color: var(--yellow);
+  text-decoration: none;
 }
 
 .nav *:hover {
@@ -186,7 +206,7 @@ hr {
 footer {
   width: 100%;
   border-top: 1px solid gray;
-  text-align:center;
+  text-align: center;
   padding: .5em 0;
   position: fixed;
   bottom: 0;
